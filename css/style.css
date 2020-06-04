@@ -79,20 +79,19 @@ footer{
     font-size: 13px;
     margin-top: 20px;
 }
-
 form{
-    margin: 40px 0;
+    margin: 40px;
 }
-
-form label, form input{
-    display: block;
-}
-
 form label, form legend{
-    font-size: 20px;
-    margin: 0 0 10px;
+    display:block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+form legend{
+    padding: .5em 0;
 }
 .inputPadrao{
+    display: block;
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 50%;
@@ -117,7 +116,7 @@ form label, form legend{
     transform: scale(1.2);
 }
 table{
-    margin: 20px 0 40px;
+    margin: 40px;
 }
 thead{
     background: #555555;
@@ -160,8 +159,8 @@ td,th{
     width: 940px;
     margin: 0 auto;
 }
-.map p{
-    margin: 0 0 2em;
+.mapa p{
+    margin: 3em 0;
     text-align: center;
 }
 .beneficios{
@@ -206,8 +205,12 @@ td,th{
 }
 
 @media screen and (max-width: 480px){
-    .caixa, .principal, .mapaConteudo, .conteudoBeneficios, .video{
+    .caixa, .principal, .mapaConteudo, .conteudoBeneficios, .video, .produtos, .produtos li{
         width: auto;
+    }
+    .produtos li{
+        display: block;
+        margin: 1em;
     }
     h1{
         text-align: center;
@@ -215,7 +218,7 @@ td,th{
     nav{
         position: static;
     }
-    .listaBeneficios, .imagemBeneficios{
+    .listaBeneficios, .imagemBeneficios, .enviar{
         width: 100%;
     } 
 }
